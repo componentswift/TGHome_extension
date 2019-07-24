@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,10 @@
 		0651E9E122E7004C007C31FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0651E9DF22E7004C007C31FD /* Main.storyboard */; };
 		0651E9E322E7004D007C31FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0651E9E222E7004D007C31FD /* Assets.xcassets */; };
 		0651E9E622E7004D007C31FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0651E9E422E7004D007C31FD /* LaunchScreen.storyboard */; };
+		0651E9F022E70363007C31FD /* Target_TGHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0651E9EF22E70363007C31FD /* Target_TGHome.swift */; };
+		0651E9FB22E70DB5007C31FD /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0651E9FA22E70DB5007C31FD /* CTMediator.m */; };
+		0651EA6122E7F16F007C31FD /* TGHome_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0651EA6022E7F16F007C31FD /* TGHome_extension.swift */; };
+		45D03E16949FCA20EECDD74B /* Pods_TGHome_extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE988786952F18DC9EEE55E /* Pods_TGHome_extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,14 @@
 		0651E9E222E7004D007C31FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0651E9E522E7004D007C31FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0651E9E722E7004D007C31FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0651E9EF22E70363007C31FD /* Target_TGHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_TGHome.swift; sourceTree = "<group>"; };
+		0651E9F322E70827007C31FD /* TGHome_extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TGHome_extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		0651E9F922E70DB3007C31FD /* CTMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMediator.h; sourceTree = "<group>"; };
+		0651E9FA22E70DB5007C31FD /* CTMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMediator.m; sourceTree = "<group>"; };
+		0651EA6022E7F16F007C31FD /* TGHome_extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGHome_extension.swift; sourceTree = "<group>"; };
+		1B537A445C57ECF0F3B64F85 /* Pods-TGHome_extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGHome_extension.release.xcconfig"; path = "Target Support Files/Pods-TGHome_extension/Pods-TGHome_extension.release.xcconfig"; sourceTree = "<group>"; };
+		640FC3585804F6BF2F8511CE /* Pods-TGHome_extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGHome_extension.debug.xcconfig"; path = "Target Support Files/Pods-TGHome_extension/Pods-TGHome_extension.debug.xcconfig"; sourceTree = "<group>"; };
+		FDE988786952F18DC9EEE55E /* Pods_TGHome_extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TGHome_extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D03E16949FCA20EECDD74B /* Pods_TGHome_extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				0651E9DA22E7004C007C31FD /* TGHome_extension */,
 				0651E9D922E7004C007C31FD /* Products */,
+				437930ECD4B8529B1BABA782 /* Pods */,
+				EA4C80C630218FEE8F098BA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,44 @@
 		0651E9DA22E7004C007C31FD /* TGHome_extension */ = {
 			isa = PBXGroup;
 			children = (
+				0651EA5922E71665007C31FD /* TGHome_extension */,
+				0651E9EF22E70363007C31FD /* Target_TGHome.swift */,
 				0651E9DB22E7004C007C31FD /* AppDelegate.swift */,
 				0651E9DD22E7004C007C31FD /* ViewController.swift */,
 				0651E9DF22E7004C007C31FD /* Main.storyboard */,
 				0651E9E222E7004D007C31FD /* Assets.xcassets */,
 				0651E9E422E7004D007C31FD /* LaunchScreen.storyboard */,
 				0651E9E722E7004D007C31FD /* Info.plist */,
+				0651E9F922E70DB3007C31FD /* CTMediator.h */,
+				0651E9FA22E70DB5007C31FD /* CTMediator.m */,
+				0651E9F322E70827007C31FD /* TGHome_extension-Bridging-Header.h */,
 			);
 			path = TGHome_extension;
+			sourceTree = "<group>";
+		};
+		0651EA5922E71665007C31FD /* TGHome_extension */ = {
+			isa = PBXGroup;
+			children = (
+				0651EA6022E7F16F007C31FD /* TGHome_extension.swift */,
+			);
+			path = TGHome_extension;
+			sourceTree = "<group>";
+		};
+		437930ECD4B8529B1BABA782 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				640FC3585804F6BF2F8511CE /* Pods-TGHome_extension.debug.xcconfig */,
+				1B537A445C57ECF0F3B64F85 /* Pods-TGHome_extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA4C80C630218FEE8F098BA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDE988786952F18DC9EEE55E /* Pods_TGHome_extension.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0651E9EA22E7004D007C31FD /* Build configuration list for PBXNativeTarget "TGHome_extension" */;
 			buildPhases = (
+				2239F7A41485792A23F4F7CA /* [CP] Check Pods Manifest.lock */,
 				0651E9D422E7004C007C31FD /* Sources */,
 				0651E9D522E7004C007C31FD /* Frameworks */,
 				0651E9D622E7004C007C31FD /* Resources */,
+				F46D78489D4602496AD8CA20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +143,7 @@
 				TargetAttributes = {
 					0651E9D722E7004C007C31FD = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,13 +178,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2239F7A41485792A23F4F7CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TGHome_extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F46D78489D4602496AD8CA20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TGHome_extension/Pods-TGHome_extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TGHome_extension/Pods-TGHome_extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TGHome_extension/Pods-TGHome_extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0651E9D422E7004C007C31FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0651E9DE22E7004C007C31FD /* ViewController.swift in Sources */,
+				0651E9FB22E70DB5007C31FD /* CTMediator.m in Sources */,
 				0651E9DC22E7004C007C31FD /* AppDelegate.swift in Sources */,
+				0651E9F022E70363007C31FD /* Target_TGHome.swift in Sources */,
+				0651EA6122E7F16F007C31FD /* TGHome_extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +373,10 @@
 		};
 		0651E9EB22E7004D007C31FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 640FC3585804F6BF2F8511CE /* Pods-TGHome_extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 839RTY5C9C;
 				INFOPLIST_FILE = TGHome_extension/Info.plist;
@@ -291,6 +386,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tangmengze.TGHome-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TGHome_extension/TGHome_extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +395,10 @@
 		};
 		0651E9EC22E7004D007C31FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B537A445C57ECF0F3B64F85 /* Pods-TGHome_extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 839RTY5C9C;
 				INFOPLIST_FILE = TGHome_extension/Info.plist;
@@ -309,6 +408,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tangmengze.TGHome-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TGHome_extension/TGHome_extension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
